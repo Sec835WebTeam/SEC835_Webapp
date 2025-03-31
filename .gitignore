@@ -15,5 +15,3 @@ Thumbs.db
 # IDE settings
 .vscode/
 .idea/
-*.swp
-# Trigger workflow
