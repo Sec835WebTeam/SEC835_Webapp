@@ -1,4 +1,4 @@
-name: Status Check
+name: Status Check for Main Branch 
 
 on:
   push:
@@ -8,12 +8,13 @@ on:
 
 jobs:
   check:
+    name: Check Main Branch
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: Run status check
-        run: echo "Status check passed!"
-        #a
+      - name: Run status check step
+        run: echo "This is a status check step"
+
