@@ -1,0 +1,19 @@
+name: Status Check for Merge
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  status-check:                # ← 这个名字会出现在 Add Checks 中！
+    name: Check Before Merge
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Run test
+        run: echo "This is a passing test"
