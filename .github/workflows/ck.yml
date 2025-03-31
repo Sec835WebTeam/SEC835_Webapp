@@ -1,4 +1,4 @@
-name: Status Check for Main Branch 
+name: Status Check for Main Branch
 
 on:
   push:
@@ -15,6 +15,11 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: Run status check step
-        run: echo "This is a status check step"
-#trigger
+      - name: Echo something
+        run: echo "This is a dummy status check"
+
+      - name: Named Status Check
+        uses: actions/github-script@v7
+        with:
+          script: |
+            core.notice(' GitHub now recognizes this as a status check!')
