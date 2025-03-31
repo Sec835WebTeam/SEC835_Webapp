@@ -7,11 +7,11 @@ config/*.json
 # dep
 node_modules/
 
-# System files
+# sys
 .DS_Store
 Thumbs.db
 *.log
 
-# IDE settings
+# IDE
 .vscode/
 .idea/
