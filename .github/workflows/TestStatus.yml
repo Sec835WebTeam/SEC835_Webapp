@@ -7,7 +7,7 @@ on:
     branches: [main]
 
 jobs:
-  status-check:                # ← 这个名字会出现在 Add Checks 中！
+  status-check:
     name: Check Before Merge
     runs-on: ubuntu-latest
 
